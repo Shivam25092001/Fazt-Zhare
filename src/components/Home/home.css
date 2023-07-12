@@ -1,9 +1,9 @@
-.App{
+.Home{
     padding: 1rem 8rem;
 }
 
 @media screen and (max-width: 1110px){
-    .App{
+    .Home{
         padding: 1rem 1rem;
     }
 }
