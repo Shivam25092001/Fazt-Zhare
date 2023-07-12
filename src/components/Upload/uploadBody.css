@@ -24,9 +24,16 @@
   height: 3em;
 }
 
+.upload-body > .ant-card{
+  width: 50vw
+}
+
 
 @media screen and (max-width: 1110px) {
   .upload-card{
     width: 90vw;
+  }
+  .upload-body > .ant-card{
+    width: auto
   }
 }

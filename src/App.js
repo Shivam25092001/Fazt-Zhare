@@ -5,17 +5,17 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home/home.js';
-import DeploymentCheck from './components/DeploymentCheck';
 
 function App() {
   return (
+    <div className='App'>
       <Router basename="/">
         <Routes>
-          <Route exact path="/check" element = {<DeploymentCheck/>} />
           <Route exact path="/:shortUrl" element={<Home />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
       </Router>
+    </div>
   );
 }
 
