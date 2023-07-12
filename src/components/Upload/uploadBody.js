@@ -35,7 +35,7 @@ const UploadBody = () => {
   const handleCopyToClipboard = () => {
     if (navigator.clipboard) {
       navigator.clipboard.writeText(
-        `${window.location.origin}/get/${result.shortUrl}`
+        `${window.location.origin}/${result.shortUrl}`
       );
       setIsCopied(true);
       info("Short URL copied to clipboard");

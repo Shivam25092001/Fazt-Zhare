@@ -9,10 +9,10 @@ import DeploymentCheck from './components/DeploymentCheck';
 
 function App() {
   return (
-      <Router>
+      <Router basename="/">
         <Routes>
           <Route exact path="/check" element = {<DeploymentCheck/>} />
-          <Route exact path="/get/:shortUrl" element={<Home />} />
+          <Route exact path="/:shortUrl" element={<Home />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
       </Router>
